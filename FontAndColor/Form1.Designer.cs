@@ -34,8 +34,8 @@
             this.tisMenu = new System.Windows.Forms.ToolStrip();
             this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
             this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
-            this.fontDig = new System.Windows.Forms.FontDialog();
-            this.colorDig = new System.Windows.Forms.ColorDialog();
+            this.fontDlg = new System.Windows.Forms.FontDialog();
+            this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
             this.statusStrip1.SuspendLayout();
             this.tisMenu.SuspendLayout();
@@ -77,6 +77,7 @@
             this.tsbtnFont.Name = "tsbtnFont";
             this.tsbtnFont.Size = new System.Drawing.Size(23, 22);
             this.tsbtnFont.Text = "toolStripButton1";
+            this.tsbtnFont.Click += new System.EventHandler(this.TsbtnFont_Click);
             // 
             // tsbtnColor
             // 
@@ -86,6 +87,7 @@
             this.tsbtnColor.Name = "tsbtnColor";
             this.tsbtnColor.Size = new System.Drawing.Size(23, 22);
             this.tsbtnColor.Text = "toolStripButton2";
+            this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
             // rtbText
             // 
@@ -122,8 +124,8 @@
 
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStrip tisMenu;
-        private System.Windows.Forms.FontDialog fontDig;
-        private System.Windows.Forms.ColorDialog colorDig;
+        private System.Windows.Forms.FontDialog fontDlg;
+        private System.Windows.Forms.ColorDialog colorDlg;
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripButton tsbtnFont;
